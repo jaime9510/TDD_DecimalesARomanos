@@ -7,6 +7,10 @@ public class DecimalARomano {
 	private String cinco = "V";
 	private String nueve = "IX";
 	private String diez = "X";
+	private String cuarenta = "XL";
+	private String cincuenta = "L";
+	private String noventa = "XC";
+	private String cien = "C";
 	
 	public String convertir(int decimal) {
 		
@@ -14,7 +18,19 @@ public class DecimalARomano {
 		
 		while(decimal > 0) {
 			
-			if((decimal - 10) >= 0) {
+			if((decimal - 100) >= 0) {
+				respuesta = respuesta + cien;
+				decimal = decimal - 100;
+			} else if((decimal - 90) >= 0) {
+				respuesta = respuesta + noventa;
+				decimal = decimal - 90;
+			} else if((decimal - 50) >= 0) {
+				respuesta = respuesta + cincuenta;
+				decimal = decimal - 50;
+			} else if((decimal - 40) >= 0) {
+				respuesta = respuesta + cuarenta;
+				decimal = decimal - 40;
+			} else if((decimal - 10) >= 0) {
 				respuesta = respuesta + diez;
 				decimal = decimal - 10;
 			} else if((decimal - 9) >= 0) {
