@@ -310,4 +310,52 @@ public class DecimalARomanoTest {
 		assertTrue("Se convierte número 422 a romano", romano.equals("CDXXII"));
 	}
 	
+	@Test
+	public void testConvertirNum500() {
+		
+		//Arrange
+		int decimal = 500;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 500 a romano", romano.equals("D"));
+	}
+	
+	@Test
+	public void testConvertirNum900() {
+		
+		//Arrange
+		int decimal = 900;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 900 a romano", romano.equals("CM"));
+	}
+	
+	@Test
+	public void testConvertirNum1000() {
+		
+		//Arrange
+		int decimal = 1000;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 1000 a romano", romano.equals("M"));
+	}
+	
 }
