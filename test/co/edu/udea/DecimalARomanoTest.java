@@ -21,4 +21,20 @@ public class DecimalARomanoTest {
 		//Assert
 		assertTrue("Se convierte número 1 a romano", romano.equals("I"));
 	}
+	
+	@Test
+	public void testConvertirNum2() {
+		
+		//Arrange
+		int decimal = 2;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 2 a romano", romano.equals("II"));
+	}
 }
