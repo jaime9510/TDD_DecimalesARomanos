@@ -69,4 +69,20 @@ public class DecimalARomanoTest {
 		//Assert
 		assertTrue("Se convierte número 4 a romano", romano.equals("IV"));
 	}
+	
+	@Test
+	public void testConvertirNum5() {
+		
+		//Arrange
+		int decimal = 5;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 5 a romano", romano.equals("V"));
+	}
 }
