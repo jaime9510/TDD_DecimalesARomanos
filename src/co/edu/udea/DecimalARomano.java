@@ -3,6 +3,7 @@ package co.edu.udea;
 public class DecimalARomano {
 	
 	private String uno = "I";
+	private String quatro = "IV";
 	
 	public String convertir(int decimal) {
 		
@@ -13,8 +14,8 @@ public class DecimalARomano {
 				respuesta = respuesta + uno;
 				decimal = decimal - 1;
 			}
-		} else {
-			respuesta = "IV";
+		} else if (decimal == 4){
+			respuesta = quatro;
 		}
 
 		
