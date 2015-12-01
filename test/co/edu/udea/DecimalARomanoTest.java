@@ -214,4 +214,68 @@ public class DecimalARomanoTest {
 		assertTrue("Se convierte número 38 a romano", romano.equals("XXXVIII"));
 	}
 	
+	@Test
+	public void testConvertirNum40() {
+		
+		//Arrange
+		int decimal = 40;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 40 a romano", romano.equals("XL"));
+	}
+	
+	@Test
+	public void testConvertirNum50() {
+		
+		//Arrange
+		int decimal = 50;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 50 a romano", romano.equals("L"));
+	}
+	
+	@Test
+	public void testConvertirNum90() {
+		
+		//Arrange
+		int decimal = 90;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 90 a romano", romano.equals("XC"));
+	}
+	
+	@Test
+	public void testConvertirNum100() {
+		
+		//Arrange
+		int decimal = 100;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 100 a romano", romano.equals("C"));
+	}
+	
 }
