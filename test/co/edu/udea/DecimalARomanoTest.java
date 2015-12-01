@@ -6,13 +6,14 @@ import org.junit.Test;
 
 public class DecimalARomanoTest {
 
+	private String romano = "";
+	private DecimalARomano decimal_romano = null;
+	
 	@Test
 	public void testConvertirNum1() {
 		
 		//Arrange
 		int decimal = 1;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -27,8 +28,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 2;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -43,8 +42,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 3;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -59,8 +56,7 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 4;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
+
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -75,8 +71,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 5;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -91,8 +85,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 6;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -107,8 +99,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 7;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -123,8 +113,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 8;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -139,8 +127,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 9;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -155,8 +141,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 10;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -171,8 +155,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 14;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -187,8 +169,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 26;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -203,8 +183,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 38;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -219,8 +197,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 40;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -235,8 +211,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 50;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -251,8 +225,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 90;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -267,8 +239,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 100;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -283,8 +253,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 363;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -299,8 +267,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 422;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -315,8 +281,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 500;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -331,8 +295,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 900;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
@@ -347,8 +309,6 @@ public class DecimalARomanoTest {
 		
 		//Arrange
 		int decimal = 1000;
-		String romano = "";
-		DecimalARomano decimal_romano = null;
 		
 		//Act
 		decimal_romano = new DecimalARomano();
