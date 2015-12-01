@@ -19,6 +19,8 @@ public class DecimalARomano {
 			respuesta = quatro;
 		} else if (decimal == 5) {
 			respuesta = cinco;
+		} else {
+			respuesta = "VI";
 		}
 
 		
