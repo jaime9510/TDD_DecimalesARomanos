@@ -2,8 +2,17 @@ package co.edu.udea;
 
 public class DecimalARomano {
 	
-	public String convertir(int Decimal) {
-		return("I");
+	private String uno = "I";
+	
+	public String convertir(int decimal) {
+		
+		String respuesta = "";
+		
+		if(decimal == 1) {
+			respuesta = uno;
+		}
+		
+		return(respuesta);
 	}
 
 }
