@@ -8,10 +8,15 @@ public class DecimalARomano {
 		
 		String respuesta = "";
 		
-		while(decimal > 0) {
-			respuesta = respuesta + uno;
-			decimal = decimal - 1;
+		if(decimal < 4) {
+			while(decimal > 0) {
+				respuesta = respuesta + uno;
+				decimal = decimal - 1;
+			}
+		} else {
+			respuesta = "IV";
 		}
+
 		
 		return(respuesta);
 	}
