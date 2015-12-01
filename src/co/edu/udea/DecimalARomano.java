@@ -10,17 +10,18 @@ public class DecimalARomano {
 		
 		String respuesta = "";
 		
-		if(decimal < 4) {
-			while(decimal > 0) {
+		while(decimal > 0) {
+			
+			if((decimal - 5) >= 0) {
+				respuesta = respuesta + cinco;
+				decimal = decimal - 5;
+			} else if((decimal - 4) >= 0) {
+				respuesta = respuesta + quatro;
+				decimal = decimal - 4;
+			} else if((decimal - 1) >= 0) {
 				respuesta = respuesta + uno;
 				decimal = decimal - 1;
 			}
-		} else if (decimal == 4){
-			respuesta = quatro;
-		} else if (decimal == 5) {
-			respuesta = cinco;
-		} else {
-			respuesta = "VI";
 		}
 
 		
