@@ -12,6 +12,9 @@ public class DecimalARomano {
 	private String noventa = "XC";
 	private String cien = "C";
 	private String cuatrocientos = "CD";
+	private String quinientos = "D";
+	private String novecientos = "CM";
+	private String mil = "M";
 	
 	public String convertir(int decimal) {
 		
@@ -19,7 +22,16 @@ public class DecimalARomano {
 		
 		while(decimal > 0) {
 			
-			if((decimal - 400) >= 0) {
+			if((decimal - 1000) >= 0) {
+				respuesta = respuesta + mil;
+				decimal = decimal - 1000;
+			} else if((decimal - 900) >= 0) {
+				respuesta = respuesta + novecientos;
+				decimal = decimal - 900;
+			} else if((decimal - 500) >= 0) {
+				respuesta = respuesta + quinientos;
+				decimal = decimal - 500;
+			} else if((decimal - 400) >= 0) {
 				respuesta = respuesta + cuatrocientos;
 				decimal = decimal - 400;
 			} else if((decimal - 100) >= 0) {
