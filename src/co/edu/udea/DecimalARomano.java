@@ -4,6 +4,7 @@ public class DecimalARomano {
 	
 	private String uno = "I";
 	private String quatro = "IV";
+	private String cinco = "V";
 	
 	public String convertir(int decimal) {
 		
@@ -16,8 +17,8 @@ public class DecimalARomano {
 			}
 		} else if (decimal == 4){
 			respuesta = quatro;
-		} else {
-			respuesta = "V";
+		} else if (decimal == 5) {
+			respuesta = cinco;
 		}
 
 		
