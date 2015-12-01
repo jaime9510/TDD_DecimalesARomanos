@@ -278,4 +278,36 @@ public class DecimalARomanoTest {
 		assertTrue("Se convierte número 100 a romano", romano.equals("C"));
 	}
 	
+	@Test
+	public void testConvertirNum363() {
+		
+		//Arrange
+		int decimal = 363;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 363 a romano", romano.equals("CCCLXIII"));
+	}
+	
+	@Test
+	public void testConvertirNum422() {
+		
+		//Arrange
+		int decimal = 422;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 422 a romano", romano.equals("CDXXII"));
+	}
+	
 }

@@ -3,7 +3,7 @@ package co.edu.udea;
 public class DecimalARomano {
 	
 	private String uno = "I";
-	private String quatro = "IV";
+	private String cuatro = "IV";
 	private String cinco = "V";
 	private String nueve = "IX";
 	private String diez = "X";
@@ -11,6 +11,7 @@ public class DecimalARomano {
 	private String cincuenta = "L";
 	private String noventa = "XC";
 	private String cien = "C";
+	private String cuatrocientos = "CD";
 	
 	public String convertir(int decimal) {
 		
@@ -18,7 +19,10 @@ public class DecimalARomano {
 		
 		while(decimal > 0) {
 			
-			if((decimal - 100) >= 0) {
+			if((decimal - 400) >= 0) {
+				respuesta = respuesta + cuatrocientos;
+				decimal = decimal - 400;
+			} else if((decimal - 100) >= 0) {
 				respuesta = respuesta + cien;
 				decimal = decimal - 100;
 			} else if((decimal - 90) >= 0) {
@@ -40,7 +44,7 @@ public class DecimalARomano {
 				respuesta = respuesta + cinco;
 				decimal = decimal - 5;
 			} else if((decimal - 4) >= 0) {
-				respuesta = respuesta + quatro;
+				respuesta = respuesta + cuatro;
 				decimal = decimal - 4;
 			} else if((decimal - 1) >= 0) {
 				respuesta = respuesta + uno;
