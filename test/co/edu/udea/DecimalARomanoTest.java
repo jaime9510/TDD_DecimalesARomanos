@@ -37,4 +37,36 @@ public class DecimalARomanoTest {
 		//Assert
 		assertTrue("Se convierte número 2 a romano", romano.equals("II"));
 	}
+	
+	@Test
+	public void testConvertirNum3() {
+		
+		//Arrange
+		int decimal = 3;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 3 a romano", romano.equals("III"));
+	}
+	
+	@Test
+	public void testConvertirNum4() {
+		
+		//Arrange
+		int decimal = 4;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 4 a romano", romano.equals("IV"));
+	}
 }
