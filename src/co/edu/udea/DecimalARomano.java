@@ -6,6 +6,7 @@ public class DecimalARomano {
 	private String quatro = "IV";
 	private String cinco = "V";
 	private String nueve = "IX";
+	private String diez = "X";
 	
 	public String convertir(int decimal) {
 		
@@ -13,7 +14,10 @@ public class DecimalARomano {
 		
 		while(decimal > 0) {
 			
-			if((decimal - 9) >= 0) {
+			if((decimal - 10) >= 0) {
+				respuesta = respuesta + diez;
+				decimal = decimal - 10;
+			} else if((decimal - 9) >= 0) {
 				respuesta = respuesta + nueve;
 				decimal = decimal - 9;
 			} else if((decimal - 5) >= 0) {
