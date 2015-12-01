@@ -10,6 +10,8 @@ public class DecimalARomano {
 		
 		if(decimal == 1) {
 			respuesta = uno;
+		} else {
+			respuesta = uno + uno;
 		}
 		
 		return(respuesta);
