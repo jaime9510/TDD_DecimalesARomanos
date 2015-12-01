@@ -150,4 +150,20 @@ public class DecimalARomanoTest {
 		assertTrue("Se convierte número 9 a romano", romano.equals("IX"));
 	}
 	
+	@Test
+	public void testConvertirNum10() {
+		
+		//Arrange
+		int decimal = 10;
+		String romano = "";
+		DecimalARomano decimal_romano = null;
+		
+		//Act
+		decimal_romano = new DecimalARomano();
+		romano = decimal_romano.convertir(decimal);
+		
+		//Assert
+		assertTrue("Se convierte número 10 a romano", romano.equals("X"));
+	}
+	
 }
